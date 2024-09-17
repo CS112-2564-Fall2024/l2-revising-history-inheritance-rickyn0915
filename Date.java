@@ -129,7 +129,7 @@ public class Date
 		
 		if(isValid)
 		{
-			this.month = this.monthToString(month); //convert month # to string!
+		//	this.month = this.monthToString(month); //convert month # to string!
 		}
 		
 		return isValid;
@@ -237,10 +237,10 @@ public class Date
 	
 	
 	/********** OTHER REQUIRED METHODS **********/
-	@Override
-	public String toString()
+	//@Override
+	//public String toString()
 	{
-		return this.monthToInt(this.month) + "/" + this.day + "/" + this.year;
+		//return this.monthToInt(this.month) + "/" + this.day + "/" + this.year;
 		
 		//OTHER OPTIONS (just make sure to update documentation appropriately):
 		//return this.month + " " + this.day + ", " + this.year; //USA
@@ -268,6 +268,10 @@ public class Date
 		}
 	}
 
+
+	//public int comapreTo(Object other) {
+	
+		
 	/**
 	 * Determines if calling object comes before param Date (checks month, day, year completely)
 	 * 
